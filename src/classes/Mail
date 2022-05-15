@@ -1,0 +1,24 @@
+<?php
+use Symfony\Component\Mailer\Transport;
+use Symfony\Component\Mailer\Mailer;
+
+class Mail {
+    private $mailer;
+    function __construct() {
+        $transport = Transport::fromDsn('smtp://localhost');
+        $this->mailer = new Mailer($transport);
+    }
+
+    public function sendMail($to, $subject, $message) {
+        $email = (new Email())
+            ->from('hello@example.com')
+            ->to($to)
+            ->subject($subject)
+            ->text($message);
+
+        $this->mailer->send($email);
+    }
+}
+
+
+?>
