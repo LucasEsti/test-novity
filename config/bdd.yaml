@@ -1,0 +1,8 @@
+bdd:
+    mysql:
+        driver:   pdo_mysql
+        host:     "%localhost%"
+        dbname:   "%novity_mailer%"
+        user:     "%root%"
+        password: "%%"
+        charset:  UTF8
