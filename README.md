@@ -5,7 +5,7 @@ Test PHP - Novity
 Environnement: MySql 8.0.27 
 PHP 8.1.0 
 Prise en main: 
-	installer les dépendances : 
+	installer les dï¿½pendances : 
 	composer install - Http foundation - Symfony Mailer
 
-
+Launch: http://localhost/novity/index.php/formulaire
